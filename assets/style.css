@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Zen Maru Gothic', sans-serif;
-    background-color: #000b14;
-    color: #63e9ef;
+    background-color: #000000;
+    color: #BDE0FE;
     margin: 0;
     padding: 0;
     display: flex;
@@ -52,7 +52,19 @@ body {
     margin: 5px 0;
     text-decoration: none;
     background-color: transparent;
-    color: #63e9ef;
+    color: #BDE0FE;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.link-button-false {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    background-color: transparent;
+    color: #BDE0FE;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -60,4 +72,9 @@ body {
 .link-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
+}
+
+.link-button-false:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
 }
