@@ -63,41 +63,43 @@ html, body {
     position: relative;
     overflow: hidden;
     background-color: transparent;
-    transition: background-color 1s;
 }
 
 .link-button img {
     margin-top: 5px;
 }
+@media (pointer: fine) {
+	.link-button {
+		transition: background-color 1s;
+	}
+	.link-button:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		transform: translateY(-5px);
+		transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+	}
 
-.link-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-5px);
-	transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+	.border-svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+
+	.border-svg path {
+		fill: none;
+		stroke: #BDE0FE;
+		stroke-width: 2;
+		stroke-dasharray: 550; 
+		stroke-dashoffset: 550; 
+		transition: stroke-dashoffset 2s cubic-bezier(0.66, 0, 0.24, 1);
+	}
+
+	.link-button:hover .border-svg path {
+		stroke-dashoffset: 0; 
+	}
 }
-
-.border-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.border-svg path {
-    fill: none;
-    stroke: #BDE0FE;
-    stroke-width: 2;
-    stroke-dasharray: 550; 
-    stroke-dashoffset: 550; 
-    transition: stroke-dashoffset 2s cubic-bezier(0.66, 0, 0.24, 1);
-}
-
-.link-button:hover .border-svg path {
-    stroke-dashoffset: 0; 
-}
-
 footer {
     font-size: 13px;
     color: white;
