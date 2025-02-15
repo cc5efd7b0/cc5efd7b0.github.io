@@ -68,6 +68,13 @@ html, body {
 .link-button img {
     margin-top: 5px;
 }
+
+@media (pointer: none) {
+	.border-svg {
+		display: none;
+	}
+}
+
 @media (pointer: fine) {
 	.link-button {
 		transition: background-color 1s;
