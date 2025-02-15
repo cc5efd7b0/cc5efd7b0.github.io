@@ -69,7 +69,7 @@ html, body {
     margin-top: 5px;
 }
 
-@media (pointer: none) {
+@media (any-pointer: coarse), (any-pointer: none) {
 	.border-svg {
 		display: none;
 	}
