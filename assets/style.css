@@ -20,6 +20,18 @@ html, body {
     align-items: center;
 }
 
+
+@media (any-pointer: fine) {
+	.link-button {
+		transition: background-color 1s;
+	}
+	
+	.link-button:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		transform: translateY(-5px);
+		transition: transform 0.3s;
+	}
+
 .icon {
     margin-bottom: 20px;
     padding-top: 180px;
