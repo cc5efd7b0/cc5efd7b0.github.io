@@ -19,17 +19,17 @@
     <script>
         let countdown = 5;
         const countdownElement = document.getElementById('countdown');
-
+    
         const countdownInterval = setInterval(() => {
-            countdown -= 1;
-            countdownElement.textContent = countdown;
-
-            const text = countdown === 1 ? 'second' : 'seconds';
-            countdownElement.parentElement.querySelector('p').textContent = `You will be redirected in ${countdown} ${text}`;
-
             if (countdown <= 0) {
                 clearInterval(countdownInterval);
                 window.location.href = "https://cc5efd7b0.codeberg.page";
+            } else {
+                countdown -= 1;
+                countdownElement.textContent = countdown;
+    
+                const text = countdown === 1 ? 'second' : 'seconds';
+                countdownElement.parentElement.querySelector('p').textContent = `You will be redirected in ${countdown} ${text}`;
             }
         }, 1000);
     </script>
