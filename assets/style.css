@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: 'Text Me One';
     background-color: #000000;
     color: #BDE0FE;
     display: flex;
@@ -20,81 +20,11 @@ html, body {
     align-items: center;
 }
 
-
-@media (any-pointer: fine) {
-	.link-button {
-		transition: background-color 1s;
-	}
-	
-	.link-button:hover {
-		background-color: rgba(255, 255, 255, 0.1);
-		transform: translateY(-5px);
-		transition: transform 0.3s;
-	}
-
-.icon {
-    margin-bottom: 20px;
-    padding-top: 180px;
+a {
+    text-decoration: underline !important;
+    color: inherit;
 }
 
-.icon-img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.name {
-    cursor: default;
-    font-family: 'Text Me One';
-    font-size: 20px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.introduction {
-    cursor: default;
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.link-button {
-    display: block;
-    width: 200px;
-    padding: 10px;
-    margin: 5px 0;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-}
-
-.link-button img {
-    margin-top: 5px;
-}
-
-footer {
-    font-size: 13px;
-    color: white;
-    word-wrap: break-all;
-    width: 100%;
-    margin-top: auto;
-}
-
-footer a {
-    color: #BDE0FE;
-    text-decoration: none;
-    display: inline-block;
-}
-
-footer a:hover {
-    color: #bde0fe9f;
+a:visited {
+    color: inherit;
 }

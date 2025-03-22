@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5; url=https://cc5efd7b0.codeberg.page">
     <title>cc5efd7b0</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
@@ -11,31 +12,27 @@
 
 <body>
     <div class="container">
-        <div class="icon">
-            <img src="assets/ic.png" alt="icon" class="icon-img">
-        </div>
-        <div class="name">cc5efd7b0</div>
-        <div class="introduction">I love Kotonoha sisters♡</div>
-        <div class="links">
-            <a href="https://x.com/i/user/1721483346990202880" rel="noopener noreferrer" class="link-button">
-                <img src="assets/x.png" width="20" height="20" alt="X">
-            </a>
-            <a href="https://github.com/cc5efd7b0" rel="noopener noreferrer" class="link-button">
-                <img src="assets/github.png" width="25" height="25" alt="GitHub">
-            </a>
-            <a href="https://scrapbox.io/cc5efd7b0" rel="noopener noreferrer" class="link-button">
-                Cosense(Formerly:Scrapbox)
-            </a>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 cc5efd7b0</p>
-            <p class="about-icon">
-                Icon:<a href="https://scrapbox.io/CatWithNeko-hub/琴葉姉妹立ち絵素材" target="_blank" rel="noopener noreferrer">Scrapbox.io/CatWithNeko-hub/琴葉姉妹立ち絵素材</a>
-                by <a href="https://x.com/i/user/1277501028330438657" target="_blank" rel="noopener noreferrer">こんにゃくねこ</a>様
-            </p>
-        </footer>
+        <h2>Redirecting to: <a href="https://cc5efd7b0.codeberg.page" target="_blank" rel="noopener noreferrer">https://cc5efd7b0.codeberg.page</a></h2>
+        <p>You will be redirected in <span id="countdown">5</span> sec</p>
     </div>
+
+    <script>
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownInterval = setInterval(() => {
+            countdown -= 1;
+            countdownElement.textContent = countdown;
+
+            const text = countdown === 1 ? 'second' : 'seconds';
+            countdownElement.parentElement.querySelector('p').textContent = `You will be redirected in ${countdown} ${text}`;
+
+            if (countdown <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "https://cc5efd7b0.codeberg.page";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>
